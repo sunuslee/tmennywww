@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/ofchat.css"/>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/strophejs/src/md5.js"></script>
+    <script type="text/javascript" src="/js/strophejs/src/base64.js"></script>
+    <script type="text/javascript" src="/js/strophejs/src/core.js"></script>
+    <script type="text/javascript" src="/js/strophejs/src/strophe-openfire.js"></script>
+    <script type="text/javascript" src="/js/strophejs/plugins/mixin.support.js"></script>
+    <script type="text/javascript" src="/js/strophejs/plugins/plugin.0030.js"></script>
+    <script type="text/javascript" src="/js/strophejs/plugins/plugin.cm.js"></script>
+    <script type="text/javascript" src="/js/strophejs/plugins/plugin.roster.js"></script>
+    <script type="text/javascript" src="/js/strophejs/plugins/plugin.muc.js"></script>
+    <script type="text/javascript" src="/js/background/jquery.md5.js"></script>
+    <script type="text/javascript" src="/js/background/jquery.2regex.js"></script>
+    <script type="text/javascript" src="/js/background/state.js"></script>
+    <script type="text/javascript" src="/js/background/xmpp-secretary.js"></script>
+    <script type="text/javascript" src="/js/background/xmpp-boss.js"></script>
+
+
+    <script type="text/javascript">
+        $(function(){
+            boss.init(secretary, state);
+            $('#sendBT').click(function() {
+                tojid = 'xavier@narr.3322.org';
+                text = $('#inputarea').val();
+                $('#inputarea').val('');
+		        var msg = $msg({to: tojid, type: "chat"}).c("body",{xmlns: Strophe.NS.CLIENT}).t(text);
+                features['xmpp']._connection.send(msg);
+            })
+        });
+
+    </script>
+  </head>
+  <body>
+  <div id="wrapper">
+      <div id="chatleft">
+	  <p id="ai">AI∫Õ±Í«©</p>
+	  </div>
+	  <div id="chatroom">
+          <div id="notifications">
+              <textarea id="displayarea" readonly="readonly"></textarea>
+          </div>
+          <div id="sender">
+              <textarea id="inputarea" class="txt"/></textarea>
+              <input type="button" id="sendBT" value="send"/>
+          </div>
+	  </div>
+  </div>  
+  </body>
+</html>
+
+

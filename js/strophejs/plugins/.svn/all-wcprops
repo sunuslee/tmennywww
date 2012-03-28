@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/15/trunk/src/ofchat/js/strophejs/plugins
+END
+strophe.flxhr.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/src/ofchat/js/strophejs/plugins/strophe.flxhr.js
+END
+plugin.roster.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/src/ofchat/js/strophejs/plugins/plugin.roster.js
+END
+plugin.cm.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/15/trunk/src/ofchat/js/strophejs/plugins/plugin.cm.js
+END
+plugin.0030.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/9/trunk/src/ofchat/js/strophejs/plugins/plugin.0030.js
+END
+mixin.support.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/src/ofchat/js/strophejs/plugins/mixin.support.js
+END
+plugin.muc.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/10/trunk/src/ofchat/js/strophejs/plugins/plugin.muc.js
+END

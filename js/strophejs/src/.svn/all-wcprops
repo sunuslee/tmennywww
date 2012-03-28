@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/15/trunk/src/ofchat/js/strophejs/src
+END
+base64.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/9/trunk/src/ofchat/js/strophejs/src/base64.js
+END
+md5.js
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/9/trunk/src/ofchat/js/strophejs/src/md5.js
+END
+core.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/15/trunk/src/ofchat/js/strophejs/src/core.js
+END
+strophe-openfire.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/15/trunk/src/ofchat/js/strophejs/src/strophe-openfire.js
+END
