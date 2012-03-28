@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>XMPP-WEBSOCKET</title>
     <link rel="stylesheet" type="text/css" href="css/ofchat.css"/>
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/strophejs/src/md5.js"></script>
@@ -22,8 +24,11 @@
     <script type="text/javascript">
         $(function(){
             boss.init(secretary, state);
+            $('#changeJIDBT').click(function(){
+                tojid = $('#tojid').val();
+            })
             $('#sendBT').click(function() {
-                tojid = 'xavier@narr.3322.org';
+                
                 text = $('#inputarea').val();
                 $('#inputarea').val('');
 		        var msg = $msg({to: tojid, type: "chat"}).c("body",{xmlns: Strophe.NS.CLIENT}).t(text);
@@ -37,8 +42,11 @@
   <body>
   <div id="wrapper">
       <div id="chatleft">
-	  <p id="ai">AI�ͱ�ǩ</p>
-	  </div>
+	  <p id="ai">AI和标签</p>
+      <input type="text" id="tojid"/>
+      <input type="button" id="changeJIDBT" value="change"/>
+      </div>
+      
 	  <div id="chatroom">
           <div id="notifications">
               <textarea id="displayarea" readonly="readonly"></textarea>
